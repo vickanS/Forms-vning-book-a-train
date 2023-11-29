@@ -8,16 +8,21 @@
 </head>
 <body>
     <section class="container">
-        <header>ÅKA TÅG</header>
+        <header><h1>ÅKA TÅG</h1></header>
         <nav>
-          <span class="nav1">Stockholm</span> <span class="nav2">Göteborg</span>
+          <section class="nav1">Stockholm
+            <span class="time">10.30</span>
+          </section>
+          <section class="nav2">Göteborg
+            <span class="time">14.45</span>
+          </section>
         </nav>
-        <br>
+        <br><br>
         <form>
-            <input type="radio" name="klass" value="2">
-            <label for="2:aklass">2:a klass</label>
-            <input type="radio" name="klass" value="1">
-            <label for="1:aklass">1:a klass</label>
+            <input type="radio" id="klass2" name="klass" value="2">
+            <label for="klass2">2:a klass</label>
+            <input type="radio" id="klass1" name="klass" value="1">
+            <label for="klass1">1:a klass</label>
             <br><br><br>
             <label for="biljetter">Antal biljetter</label><br>
             <select name="biljetter" id="biljetter">
@@ -29,7 +34,18 @@
             <select name="titel" id="titel">
                 <option value="titel1">Mr.</option>
                 <option value="titel2">Mrs.</option>
-            </select>
+            </select><br><br>
+            <label for="name">Name</label><br>
+            <input type="text" id="name"><br><br>
+            <label for="lname">Last name</label><br>
+            <input type="text" id="lname"><br><br><br>
+            <input type="checkbox" id="check">
+            <label for="check">godkänn villkoren</label>
+            <br><br>
+            <section class="button">
+                <input type="submit" value="Boka biljetter">
+            </section>
+
          
         </form>
     </section>
